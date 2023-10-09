@@ -1,12 +1,10 @@
 package kr.co.kcp.backendcoding.work.service;
 
-import jakarta.persistence.PersistenceContext;
 import kr.co.kcp.backendcoding.work.domain.dto.request.OrderInfoRequestDto;
 import kr.co.kcp.backendcoding.work.domain.dto.request.OrderReservationRequestDto;
 import kr.co.kcp.backendcoding.work.domain.dto.response.CommonResponseDto;
 import kr.co.kcp.backendcoding.work.domain.dto.response.OrderInfoResponseDto;
 import kr.co.kcp.backendcoding.work.domain.dto.response.OrderReservationResponseDto;
-import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +13,7 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 @RunWith(SpringRunner.class)

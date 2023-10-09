@@ -5,14 +5,13 @@ import jakarta.validation.Validation;
 import jakarta.validation.Validator;
 import jakarta.validation.ValidatorFactory;
 import kr.co.kcp.backendcoding.work.domain.dto.request.OrderInfoRequestDto;
-
 import kr.co.kcp.backendcoding.work.domain.dto.request.OrderReservationRequestDto;
 import kr.co.kcp.backendcoding.work.domain.dto.request.PointSearchRequestDto;
 import org.junit.Test;
 
 import java.util.Set;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class BeanValidationTest {
     private final ValidatorFactory factory = Validation.buildDefaultValidatorFactory();

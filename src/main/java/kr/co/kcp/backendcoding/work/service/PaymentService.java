@@ -10,7 +10,7 @@ import kr.co.kcp.backendcoding.work.domain.dto.response.CommonResponseDto;
 public interface PaymentService {
 
     // 주문 에약 정보 저장
-    void saveOrderReservation(OrderReservationRequestDto orderReservationRequestDto);
+    void saveOrderReservation(OrderReservationRequestDto orderReservationRequestDto) throws Exception;
 
     // 알림 발송
     CommonResponseDto sendNotification(String reservationId);

@@ -1,6 +1,6 @@
 package kr.co.kcp.backendcoding.work.domain.dto.request;
 
-import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -24,15 +24,15 @@ public class OrderReservationRequestDto {
     @NotBlank
     private String shopCode;
 
-    @Max(value = 999999999)
+    @Digits(integer = 10, fraction = 0)
     @NotNull
     private int orderAmount;
 
-    @Max(value = 999999999)
+    @Digits(integer = 10, fraction = 0)
     @NotNull
     private int discountAmount;
 
-    @Max(value = 999999999)
+    @Digits(integer = 10, fraction = 0)
     @NotNull
     private int paymentAmount;
 

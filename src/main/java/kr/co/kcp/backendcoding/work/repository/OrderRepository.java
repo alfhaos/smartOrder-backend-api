@@ -1,6 +1,5 @@
 package kr.co.kcp.backendcoding.work.repository;
 
-import jakarta.annotation.Nullable;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.NoResultException;
 import kr.co.kcp.backendcoding.work.domain.dto.request.OrderInfoRequestDto;
@@ -29,7 +28,6 @@ public class OrderRepository {
 
     public OrderInfoResponseDto orderInfo(OrderInfoRequestDto orderInfoRequest) {
 
-
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
         String orderId = orderInfoRequest.getOrderId();
@@ -49,7 +47,7 @@ public class OrderRepository {
         }
 
         /*
-        * 주문 메뉴 조회
+        * 주문 메뉴,가격 조회
         * -> OrderMenus 생성자를 추가하여 상품 이름과 상품 가격만을 통해 OrderMenus 객체를 반환하도록 하였습니다.
         * */
         List<OrderMenus> orderMenusList = em.createQuery("select new kr.co.kcp.backendcoding.work.domain.entity.OrderMenus(om.productName, om.price)" +
@@ -103,7 +101,7 @@ public class OrderRepository {
     /*
      * 주문 예약 정보 저장
      */
-    public void saveOrderReservation(OrderReservationRequestDto orderReservationRequestDto) {
+    public void saveOrderReservation(OrderReservationRequestDto orderReservationRequestDto) throws Exception {
 
         OrderReservations orderReservations = OrderReservations.builder()
                 .reservationId(orderReservationRequestDto.getReservationId())
@@ -113,8 +111,14 @@ public class OrderRepository {
                 .discountAmount(orderReservationRequestDto.getDiscountAmount())
                 .paymentAmount(orderReservationRequestDto.getPaymentAmount())
                 .build();
-
-        em.persist(orderReservations);
+        try {
+            // 성공적으로 저장됨
+            em.persist(orderReservations);
+            em.flush();
+        } catch (Exception e) {
+            // 저장 중 오류 발생
+            throw new Exception("주문 예약 정보 저장 실패.");
+        }
     }
 
     /*
@@ -133,16 +137,17 @@ public class OrderRepository {
 
             // 공통응답 데이터 생성
             commonResponseDto.setCode(0);
-            commonResponseDto.setMessage("조회된 주문 예약 정보 아이디 입니다.");
+            commonResponseDto.setMessage("주문 예약 정보 저장 성공했습니다.");
 
             // 응답 DTO 생성
-            OrderReservationResponseDto orderReservationResponseDto = new OrderReservationResponseDto(reservationId);
+            OrderReservationResponseDto orderReservationResponseDto = new OrderReservationResponseDto(orderReservations.getReservationId());
 
             commonResponseDto.setData(orderReservationResponseDto);
 
             return commonResponseDto;
         } catch (NoResultException exception){
             
+            // 조회된 결과가 없을때
             commonResponseDto.setCode(1);
             commonResponseDto.setMessage("조회된 주문 예약 정보가 없습니다.");
 

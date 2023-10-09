@@ -3,11 +3,9 @@ package kr.co.kcp.backendcoding.work.common.filter;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import kr.co.kcp.backendcoding.work.common.config.RereadableRequestWrapper;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-import java.util.List;
 
 @Component
 public class HttpsFilter implements Filter {

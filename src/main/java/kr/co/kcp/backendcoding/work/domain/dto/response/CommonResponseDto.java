@@ -1,5 +1,6 @@
 package kr.co.kcp.backendcoding.work.domain.dto.response;
 
+import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -14,7 +15,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CommonResponseDto {
 
-    @Size(min = 1, max = 4)
+    @Digits(integer = 4, fraction = 0)
     @NotNull
     private int code;
 

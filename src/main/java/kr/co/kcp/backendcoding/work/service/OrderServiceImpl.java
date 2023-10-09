@@ -1,5 +1,6 @@
 package kr.co.kcp.backendcoding.work.service;
 
+import jakarta.validation.ValidationException;
 import kr.co.kcp.backendcoding.work.domain.dto.request.OrderInfoRequestDto;
 import kr.co.kcp.backendcoding.work.domain.dto.request.OrderReservationRequestDto;
 import kr.co.kcp.backendcoding.work.domain.dto.response.CommonResponseDto;
@@ -8,9 +9,7 @@ import kr.co.kcp.backendcoding.work.domain.payment.Card;
 import kr.co.kcp.backendcoding.work.domain.payment.Cash;
 import kr.co.kcp.backendcoding.work.domain.payment.PaymentType;
 import kr.co.kcp.backendcoding.work.repository.OrderRepository;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -55,6 +54,18 @@ public class OrderServiceImpl implements OrderService{
         orderReservationRequestDto.setReservationId(reservationId);
 
         PaymentType paymentType = null;
+
+        // 주문금액
+        int orderAmount = orderReservationRequestDto.getOrderAmount();
+        // 할인금액
+        int discountAmount = orderReservationRequestDto.getDiscountAmount();
+        // 결제금액
+        int paymentAmount = orderReservationRequestDto.getPaymentAmount();
+
+        // 주문금액 - 할인금액이 일치하지 않을경우
+        if(orderAmount - discountAmount != paymentAmount){
+            throw new ValidationException("결제금액은 주문금액 - 할인금액 입니다.");
+        }
 
         // 요청데이터의 paymentType에 따른 결제 타입 클래스 구현
         if(reqPaymentType.equals("CARD")){

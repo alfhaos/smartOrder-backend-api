@@ -3,7 +3,6 @@ package kr.co.kcp.backendcoding.work.service;
 import kr.co.kcp.backendcoding.work.domain.dto.request.OrderInfoRequestDto;
 import kr.co.kcp.backendcoding.work.domain.dto.request.OrderReservationRequestDto;
 import kr.co.kcp.backendcoding.work.domain.dto.response.CommonResponseDto;
-import kr.co.kcp.backendcoding.work.domain.dto.response.OrderInfoResponseDto;
 
 public interface OrderService {
 

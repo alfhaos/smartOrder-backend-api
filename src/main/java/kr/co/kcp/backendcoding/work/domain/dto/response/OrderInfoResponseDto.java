@@ -1,5 +1,6 @@
 package kr.co.kcp.backendcoding.work.domain.dto.response;
 
+import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -17,7 +18,7 @@ import java.util.List;
 public class OrderInfoResponseDto {
 
     @NotNull
-    @Size(min = 1, max = 10)
+    @Digits(integer = 10, fraction = 0)
     private int orderAmount;
 
     @Size(min = 1, max = 10)

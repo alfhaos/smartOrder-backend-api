@@ -52,7 +52,6 @@ public class LogInterceptor implements HandlerInterceptor {
         // Map -> JSON 변환
         JSONObject headersJson = new JSONObject(headersMap);
 
-
         // 문제 1-2 : request 요청에 대한 공통 로그
         log.info("Request : Remote IP: {}, Headers: {}, Method: {}, URI: {}, Parameter: {}", remoteIp, headersJson, method, requestURI, parameterJson);
         return true;
@@ -95,6 +94,5 @@ public class LogInterceptor implements HandlerInterceptor {
 
         return stringBuilder.toString();
     }
-
 
 }

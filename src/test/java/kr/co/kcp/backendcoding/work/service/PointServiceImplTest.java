@@ -1,7 +1,5 @@
 package kr.co.kcp.backendcoding.work.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import kr.co.kcp.backendcoding.work.domain.dto.request.OrderInfoRequestDto;
 import kr.co.kcp.backendcoding.work.domain.dto.request.PointSearchRequestDto;
 import kr.co.kcp.backendcoding.work.domain.dto.response.CommonResponseDto;
 import org.junit.Test;
@@ -10,11 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.HashMap;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 public class PointServiceImplTest {

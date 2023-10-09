@@ -1,7 +1,5 @@
 package kr.co.kcp.backendcoding.work.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import kr.co.kcp.backendcoding.work.domain.dto.request.PointSearchRequestDto;
 import kr.co.kcp.backendcoding.work.domain.dto.response.ApiResponseDto;
 import kr.co.kcp.backendcoding.work.domain.dto.response.CommonResponseDto;
@@ -11,8 +9,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
-
-import java.util.Locale;
 
 @RequiredArgsConstructor
 @Service
@@ -27,8 +23,6 @@ public class PointServiceImpl implements PointService{
 
     @Override
     public CommonResponseDto pointSearch(PointSearchRequestDto pointSearchRequestDto) {
-        // ObjectMapper 초기화
-        ObjectMapper objectMapper = new ObjectMapper();
 
         // 재시도 횟수
         int retryCount = 0;
@@ -39,11 +33,12 @@ public class PointServiceImpl implements PointService{
         UriComponentsBuilder uriBuilder = UriComponentsBuilder.fromUriString(uri)
                 .queryParam("type", type);
 
+        // 재시도 횟수가 3이상이 될떄까지 반복
         while(retryCount < maxCount) {
             try {
 
                 ApiResponseDto result = restTemplate.getForObject(uriBuilder.toUriString(), ApiResponseDto.class);
-
+                // 성공시 공통응답 return
                 return CommonResponseDto.builder()
                         .code(result.getStatus())
                         .message(result.getMessage())
@@ -59,7 +54,7 @@ public class PointServiceImpl implements PointService{
                     // 재시도 횟수 초과
                     return CommonResponseDto.builder()
                             .code(1)
-                            .message("API 호출 실패 하였습니다.")
+                            .message("API 호출 실패 : 호출 횟수 초과 입니다.")
                             .build();
                 }
             }

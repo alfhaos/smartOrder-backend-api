@@ -1,12 +1,11 @@
 package kr.co.kcp.backendcoding.work.domain.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -30,10 +29,10 @@ public class Orders {
     private Date orderDate;
 
     @OneToMany(mappedBy = "orders", fetch = FetchType.LAZY)
-    private List<OrderMenus> orderMenus;
+    private List<OrderMenus> orderMenus = new ArrayList<>();
 
     @OneToMany(mappedBy = "orders", fetch = FetchType.LAZY)
-    private List<OrderPayments> orderPayments;
+    private List<OrderPayments> orderPayments = new ArrayList<>();
 
     //OrderInfo에 대한 생성자
     public Orders(int orderAmount, Date orderDate) {
