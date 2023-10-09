@@ -1,24 +1,38 @@
 # 플랫폼개발팀 백엔드 과제 테스트
 
 ## 실행 전
-VM arguments에 -Djava.net.preferIPv4Stack=true 추가 해주셔야 됩니다.
-request 요청에 대한 공통 로그 포맷 출력시 IP가 정상적으로 출력됩니다.
+VM arguments에 -Djava.net.preferIPv4Stack=true 추가 해주셔야 됩니다.  
+
+request 요청에 대한 공통 로그 포맷 출력시 IP가 정상적으로 출력됩니다.  
+
 
 ## 테스트 파일
-1. request 값 유효성 검사
-주 패키지 경로 : kr.co.kcp.backendcoding.validation
-주 클래스 명 : BeanValidationTest
-설명 : 각 문제별 요청 값에 따른 유효성 검사 테스트 파일 입니다.
+1. request 값 유효성 검사  
 
-2. 문제 2,3 orderService 테스트
-주 패키지 경로 : kr.co.kcp.backendcoding.work.service
-주 클래스 명 : OrderServiceImplTest
-설명 : 각 문제 요구사항 기능 구현 결과에 따른 값들을 테스트 할수 있는 테스트 파일 입니다.
+주 패키지 경로 : kr.co.kcp.backendcoding.validation  
 
-3. 문제 4 pointService 테스트
-주 패키지 경로 : kr.co.kcp.backendcoding.work.service
-주 클래스 명 : PointServiceImplTest
-설명 : 포인트 조회에 따른 반환 값들을 테스트 할수 있는 파일 입니다.
+주 클래스 명 : BeanValidationTest  
+
+설명 : 각 문제별 요청 값에 따른 유효성 검사 테스트 파일 입니다.  
+
+
+2. 문제 2,3 orderService 테스트  
+
+주 패키지 경로 : kr.co.kcp.backendcoding.work.service  
+
+주 클래스 명 : OrderServiceImplTest  
+
+설명 : 각 문제 요구사항 기능 구현 결과에 따른 값들을 테스트 할수 있는 테스트 파일 입니다.  
+
+
+3. 문제 4 pointService 테스트  
+
+주 패키지 경로 : kr.co.kcp.backendcoding.work.service  
+
+주 클래스 명 : PointServiceImplTest  
+
+설명 : 포인트 조회에 따른 반환 값들을 테스트 할수 있는 파일 입니다.  
+
 
 ## 문제 1
 
