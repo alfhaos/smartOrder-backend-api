@@ -1,4 +1,4 @@
-# 플랫폼개발팀 백엔드 과제 테스트
+
 
 ## 실행 전
 VM arguments에 -Djava.net.preferIPv4Stack=true 추가 해주셔야 됩니다.  
