@@ -2,8 +2,6 @@ package kr.co.kcp.backendcoding.work.domain.payment;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
-@Data
 @AllArgsConstructor
 public class Card implements PaymentType{
 
@@ -14,4 +12,5 @@ public class Card implements PaymentType{
     public String processPayment() {
         return "AA01";
     }
+
 }

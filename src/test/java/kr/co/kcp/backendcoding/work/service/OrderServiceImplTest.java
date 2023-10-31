@@ -29,8 +29,7 @@ public class OrderServiceImplTest {
     public void OrderInfoTest() {
 
         // given : 요청 파라미터 생성
-        OrderInfoRequestDto orderInfoRequestDto = OrderInfoRequestDto.builder()
-                .orderId("000001").build();
+        OrderInfoRequestDto orderInfoRequestDto = new OrderInfoRequestDto("000001");
 
         // when : 조회 결과
         CommonResponseDto commonResponseDto = orderService.orderInfo(orderInfoRequestDto);

@@ -5,11 +5,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
-@Data
 @AllArgsConstructor
 @Builder
 public class OrderReservationResponseDto {
 
     @Size(min = 1, max = 9)
     private String reservationId;
+
 }

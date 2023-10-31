@@ -6,17 +6,15 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import kr.co.kcp.backendcoding.work.domain.vo.OrderMenusVo;
 import kr.co.kcp.backendcoding.work.domain.vo.OrderPaymentsVo;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import java.util.List;
 
-@Data
 @AllArgsConstructor
 @Builder
 public class OrderInfoResponseDto {
 
+    @Getter
     @NotNull
     @Digits(integer = 10, fraction = 0)
     private int orderAmount;
@@ -32,4 +30,15 @@ public class OrderInfoResponseDto {
     @NotNull
     private List<OrderPaymentsVo> orderPayments;
 
+    public List<OrderMenusVo> getOrderMenus() {
+        return orderMenus;
+    }
+
+    public List<OrderPaymentsVo> getOrderPayments() {
+        return orderPayments;
+    }
+
+    public void setOrderAmount(int orderAmount) {
+        this.orderAmount = orderAmount;
+    }
 }

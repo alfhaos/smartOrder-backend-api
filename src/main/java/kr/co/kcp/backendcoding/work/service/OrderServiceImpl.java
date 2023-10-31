@@ -7,6 +7,7 @@ import kr.co.kcp.backendcoding.work.domain.dto.response.CommonResponseDto;
 import kr.co.kcp.backendcoding.work.domain.dto.response.OrderInfoResponseDto;
 import kr.co.kcp.backendcoding.work.domain.payment.Card;
 import kr.co.kcp.backendcoding.work.domain.payment.Cash;
+import kr.co.kcp.backendcoding.work.domain.payment.PayType;
 import kr.co.kcp.backendcoding.work.domain.payment.PaymentType;
 import kr.co.kcp.backendcoding.work.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
@@ -25,22 +26,24 @@ public class OrderServiceImpl implements OrderService{
     @Override
     public CommonResponseDto orderInfo(OrderInfoRequestDto orderInfoRequest) {
 
-        CommonResponseDto commonResponseDto = new CommonResponseDto();
         OrderInfoResponseDto orderInfoResponseDto = orderRepository.orderInfo(orderInfoRequest);
-
-        commonResponseDto.setData(orderInfoResponseDto);
 
         if(orderInfoResponseDto == null){
             // 조회 결과가 null일 경우
-            commonResponseDto.setCode(1);
-            commonResponseDto.setMessage("조회된 주문 정보가 없습니다.");
+
+            return CommonResponseDto.builder()
+                    .code(1)
+                    .message("조회된 주문 정보가 없습니다.")
+                    .data(orderInfoResponseDto)
+                    .build();
         } else {
             // 조회 결과가 null이 아닐 경우
-            commonResponseDto.setCode(0);
-            commonResponseDto.setMessage("조회된 주문 정보 입니다.");
+            return CommonResponseDto.builder()
+                    .code(0)
+                    .message("조회된 주문 정보 입니다.")
+                    .data(orderInfoResponseDto)
+                    .build();
         }
-
-        return commonResponseDto;
     }
 
     @Override
@@ -68,9 +71,9 @@ public class OrderServiceImpl implements OrderService{
         }
 
         // 요청데이터의 paymentType에 따른 결제 타입 클래스 구현
-        if(reqPaymentType.equals("CARD")){
+        if(reqPaymentType.equals(PayType.CARD.name())){
             paymentType = new Card(reqPaymentType);
-        } else if(reqPaymentType.equals("CASH")){
+        } else if(reqPaymentType.equals(PayType.CASH.name())){
             paymentType = new Cash(reqPaymentType);
         } else {
             // CAHS, CARD가 아닐경우 에러 처리

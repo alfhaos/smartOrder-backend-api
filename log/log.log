@@ -1,0 +1,580 @@
+[2023-10-31 22:37:27:798] INFO  8356 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 22:37:27:838] INFO  8356 --- [restartedMain] BackendCodingApplication:51 : Starting BackendCodingApplication using Java 20.0.1 with PID 8356 (C:\workSpace\nhnkcp-coding-test-JHB\target\classes started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:37:27:839] INFO  8356 --- [restartedMain] BackendCodingApplication:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:37:27:885] INFO  8356 --- [restartedMain] DevToolsPropertyDefaultsPostProcessor:250 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-10-31 22:37:27:886] INFO  8356 --- [restartedMain] DevToolsPropertyDefaultsPostProcessor:250 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-10-31 22:37:28:1700] INFO  8356 --- [restartedMain] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:37:28:1739] INFO  8356 --- [restartedMain] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:37:28:1846] WARN  8356 --- [restartedMain] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:37:29:2375] INFO  8356 --- [restartedMain] TomcatWebServer:108 : Tomcat initialized with port(s): 8989 (http)
+[2023-10-31 22:37:29:2385] INFO  8356 --- [restartedMain] Http11NioProtocol:173 : Initializing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:37:29:2385] INFO  8356 --- [restartedMain] StandardService:173 : Starting service [Tomcat]
+[2023-10-31 22:37:29:2387] INFO  8356 --- [restartedMain] StandardEngine:173 : Starting Servlet engine: [Apache Tomcat/10.1.7]
+[2023-10-31 22:37:29:2449] INFO  8356 --- [restartedMain] [/]:173 : Initializing Spring embedded WebApplicationContext
+[2023-10-31 22:37:29:2449] INFO  8356 --- [restartedMain] ServletWebServerApplicationContext:291 : Root WebApplicationContext: initialization completed in 1562 ms
+[2023-10-31 22:37:29:2480] INFO  8356 --- [restartedMain] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 22:37:29:2740] INFO  8356 --- [restartedMain] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:37:29:2743] INFO  8356 --- [restartedMain] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 22:37:29:2756] INFO  8356 --- [restartedMain] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:37:29:2951] INFO  8356 --- [restartedMain] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:37:29:3019] INFO  8356 --- [restartedMain] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 22:37:30:3429] INFO  8356 --- [restartedMain] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:37:31:4369] INFO  8356 --- [restartedMain] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:37:31:4389] INFO  8356 --- [restartedMain] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:37:31:5007] INFO  8356 --- [restartedMain] OptionalLiveReloadServer:59 : LiveReload server is running on port 35729
+[2023-10-31 22:37:31:5023] INFO  8356 --- [restartedMain] Http11NioProtocol:173 : Starting ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:37:31:5054] INFO  8356 --- [restartedMain] TomcatWebServer:220 : Tomcat started on port(s): 8989 (http) with context path ''
+[2023-10-31 22:37:31:5064] INFO  8356 --- [restartedMain] BackendCodingApplication:57 : Started BackendCodingApplication in 4.795 seconds (process running for 6.31)
+[2023-10-31 22:37:33:6457] INFO  8356 --- [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 : Restarting due to 5 class path changes (5 additions, 0 deletions, 0 modifications)
+[2023-10-31 22:37:33:6486] INFO  8356 --- [Thread-6] Http11NioProtocol:173 : Pausing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:37:33:6486] INFO  8356 --- [Thread-6] StandardService:173 : Stopping service [Tomcat]
+[2023-10-31 22:37:33:6489] INFO  8356 --- [Thread-6] Http11NioProtocol:173 : Stopping ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:37:33:6491] INFO  8356 --- [Thread-6] Http11NioProtocol:173 : Destroying ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:37:33:6494] INFO  8356 --- [Thread-6] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:37:33:6704] WARN  8356 --- [Thread-6] DisposableBeanAdapter:210 : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2023-10-31 22:37:33:6704] INFO  8356 --- [Thread-6] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 22:37:33:6707] INFO  8356 --- [Thread-6] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 22:37:33:6810] INFO  8356 --- [restartedMain] BackendCodingApplication:51 : Starting BackendCodingApplication using Java 20.0.1 with PID 8356 (C:\workSpace\nhnkcp-coding-test-JHB\target\classes started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:37:33:6811] INFO  8356 --- [restartedMain] BackendCodingApplication:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:37:33:6997] INFO  8356 --- [restartedMain] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:37:33:7003] INFO  8356 --- [restartedMain] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:37:33:7037] WARN  8356 --- [restartedMain] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:37:33:7091] INFO  8356 --- [restartedMain] TomcatWebServer:108 : Tomcat initialized with port(s): 8989 (http)
+[2023-10-31 22:37:33:7091] INFO  8356 --- [restartedMain] Http11NioProtocol:173 : Initializing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:37:33:7092] INFO  8356 --- [restartedMain] StandardService:173 : Starting service [Tomcat]
+[2023-10-31 22:37:33:7092] INFO  8356 --- [restartedMain] StandardEngine:173 : Starting Servlet engine: [Apache Tomcat/10.1.7]
+[2023-10-31 22:37:33:7110] INFO  8356 --- [restartedMain] [/]:173 : Initializing Spring embedded WebApplicationContext
+[2023-10-31 22:37:33:7110] INFO  8356 --- [restartedMain] ServletWebServerApplicationContext:291 : Root WebApplicationContext: initialization completed in 297 ms
+[2023-10-31 22:37:33:7120] INFO  8356 --- [restartedMain] HikariDataSource:110 : HikariPool-2 - Starting...
+[2023-10-31 22:37:33:7122] INFO  8356 --- [restartedMain] HikariPool:565 : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:37:33:7123] INFO  8356 --- [restartedMain] HikariDataSource:123 : HikariPool-2 - Start completed.
+[2023-10-31 22:37:33:7123] INFO  8356 --- [restartedMain] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:37:33:7166] INFO  8356 --- [restartedMain] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:37:33:7172] INFO  8356 --- [restartedMain] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:37:33:7258] INFO  8356 --- [restartedMain] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:37:33:7258] INFO  8356 --- [restartedMain] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:37:34:7419] INFO  8356 --- [restartedMain] OptionalLiveReloadServer:59 : LiveReload server is running on port 35729
+[2023-10-31 22:37:34:7428] INFO  8356 --- [restartedMain] Http11NioProtocol:173 : Starting ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:37:34:7431] INFO  8356 --- [restartedMain] TomcatWebServer:220 : Tomcat started on port(s): 8989 (http) with context path ''
+[2023-10-31 22:37:34:7435] INFO  8356 --- [restartedMain] BackendCodingApplication:57 : Started BackendCodingApplication in 0.671 seconds (process running for 8.681)
+[2023-10-31 22:37:34:7438] INFO  8356 --- [restartedMain] ConditionEvaluationDeltaLoggingListener:63 : Condition evaluation unchanged
+[2023-10-31 22:38:46:79986] INFO  8356 --- [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-10-31 22:38:46:80015] INFO  8356 --- [Thread-8] Http11NioProtocol:173 : Pausing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:38:46:80016] INFO  8356 --- [Thread-8] StandardService:173 : Stopping service [Tomcat]
+[2023-10-31 22:38:46:80018] INFO  8356 --- [Thread-8] Http11NioProtocol:173 : Stopping ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:38:46:80019] INFO  8356 --- [Thread-8] Http11NioProtocol:173 : Destroying ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:38:46:80020] INFO  8356 --- [Thread-8] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:38:46:80231] WARN  8356 --- [Thread-8] DisposableBeanAdapter:210 : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2023-10-31 22:38:46:80232] INFO  8356 --- [Thread-8] HikariDataSource:350 : HikariPool-2 - Shutdown initiated...
+[2023-10-31 22:38:46:80233] INFO  8356 --- [Thread-8] HikariDataSource:352 : HikariPool-2 - Shutdown completed.
+[2023-10-31 22:38:47:80326] INFO  8356 --- [restartedMain] BackendCodingApplication:51 : Starting BackendCodingApplication using Java 20.0.1 with PID 8356 (C:\workSpace\nhnkcp-coding-test-JHB\target\classes started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:38:47:80326] INFO  8356 --- [restartedMain] BackendCodingApplication:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:38:47:80475] INFO  8356 --- [restartedMain] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:38:47:80481] INFO  8356 --- [restartedMain] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:38:47:80507] WARN  8356 --- [restartedMain] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:38:47:80553] INFO  8356 --- [restartedMain] TomcatWebServer:108 : Tomcat initialized with port(s): 8989 (http)
+[2023-10-31 22:38:47:80553] INFO  8356 --- [restartedMain] Http11NioProtocol:173 : Initializing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:38:47:80553] INFO  8356 --- [restartedMain] StandardService:173 : Starting service [Tomcat]
+[2023-10-31 22:38:47:80554] INFO  8356 --- [restartedMain] StandardEngine:173 : Starting Servlet engine: [Apache Tomcat/10.1.7]
+[2023-10-31 22:38:47:80567] INFO  8356 --- [restartedMain] [/]:173 : Initializing Spring embedded WebApplicationContext
+[2023-10-31 22:38:47:80567] INFO  8356 --- [restartedMain] ServletWebServerApplicationContext:291 : Root WebApplicationContext: initialization completed in 239 ms
+[2023-10-31 22:38:47:80576] INFO  8356 --- [restartedMain] HikariDataSource:110 : HikariPool-3 - Starting...
+[2023-10-31 22:38:47:80578] INFO  8356 --- [restartedMain] HikariPool:565 : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:38:47:80578] INFO  8356 --- [restartedMain] HikariDataSource:123 : HikariPool-3 - Start completed.
+[2023-10-31 22:38:47:80579] INFO  8356 --- [restartedMain] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:38:47:80618] INFO  8356 --- [restartedMain] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:38:47:80624] INFO  8356 --- [restartedMain] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:38:47:80689] INFO  8356 --- [restartedMain] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:38:47:80690] INFO  8356 --- [restartedMain] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:38:47:80801] INFO  8356 --- [restartedMain] OptionalLiveReloadServer:59 : LiveReload server is running on port 35729
+[2023-10-31 22:38:47:80807] INFO  8356 --- [restartedMain] Http11NioProtocol:173 : Starting ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:38:47:80810] INFO  8356 --- [restartedMain] TomcatWebServer:220 : Tomcat started on port(s): 8989 (http) with context path ''
+[2023-10-31 22:38:47:80813] INFO  8356 --- [restartedMain] BackendCodingApplication:57 : Started BackendCodingApplication in 0.521 seconds (process running for 82.059)
+[2023-10-31 22:38:47:80814] INFO  8356 --- [restartedMain] ConditionEvaluationDeltaLoggingListener:63 : Condition evaluation unchanged
+[2023-10-31 22:39:47:140677] INFO  8356 --- [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-10-31 22:39:47:140701] INFO  8356 --- [Thread-12] Http11NioProtocol:173 : Pausing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:39:47:140701] INFO  8356 --- [Thread-12] StandardService:173 : Stopping service [Tomcat]
+[2023-10-31 22:39:47:140704] INFO  8356 --- [Thread-12] Http11NioProtocol:173 : Stopping ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:39:47:140706] INFO  8356 --- [Thread-12] Http11NioProtocol:173 : Destroying ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:39:47:140708] INFO  8356 --- [Thread-12] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:39:47:140908] WARN  8356 --- [Thread-12] DisposableBeanAdapter:210 : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2023-10-31 22:39:47:140909] INFO  8356 --- [Thread-12] HikariDataSource:350 : HikariPool-3 - Shutdown initiated...
+[2023-10-31 22:39:47:140910] INFO  8356 --- [Thread-12] HikariDataSource:352 : HikariPool-3 - Shutdown completed.
+[2023-10-31 22:39:47:141009] INFO  8356 --- [restartedMain] BackendCodingApplication:51 : Starting BackendCodingApplication using Java 20.0.1 with PID 8356 (C:\workSpace\nhnkcp-coding-test-JHB\target\classes started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:39:47:141009] INFO  8356 --- [restartedMain] BackendCodingApplication:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:39:47:141203] INFO  8356 --- [restartedMain] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:39:47:141208] INFO  8356 --- [restartedMain] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:39:47:141241] WARN  8356 --- [restartedMain] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:39:47:141292] INFO  8356 --- [restartedMain] TomcatWebServer:108 : Tomcat initialized with port(s): 8989 (http)
+[2023-10-31 22:39:47:141293] INFO  8356 --- [restartedMain] Http11NioProtocol:173 : Initializing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:39:47:141293] INFO  8356 --- [restartedMain] StandardService:173 : Starting service [Tomcat]
+[2023-10-31 22:39:47:141293] INFO  8356 --- [restartedMain] StandardEngine:173 : Starting Servlet engine: [Apache Tomcat/10.1.7]
+[2023-10-31 22:39:47:141312] INFO  8356 --- [restartedMain] [/]:173 : Initializing Spring embedded WebApplicationContext
+[2023-10-31 22:39:47:141312] INFO  8356 --- [restartedMain] ServletWebServerApplicationContext:291 : Root WebApplicationContext: initialization completed in 301 ms
+[2023-10-31 22:39:48:141323] INFO  8356 --- [restartedMain] HikariDataSource:110 : HikariPool-4 - Starting...
+[2023-10-31 22:39:48:141325] INFO  8356 --- [restartedMain] HikariPool:565 : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:39:48:141326] INFO  8356 --- [restartedMain] HikariDataSource:123 : HikariPool-4 - Start completed.
+[2023-10-31 22:39:48:141326] INFO  8356 --- [restartedMain] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:39:48:141361] INFO  8356 --- [restartedMain] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:39:48:141369] INFO  8356 --- [restartedMain] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:39:48:141444] INFO  8356 --- [restartedMain] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:39:48:141444] INFO  8356 --- [restartedMain] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:39:48:141562] INFO  8356 --- [restartedMain] OptionalLiveReloadServer:59 : LiveReload server is running on port 35729
+[2023-10-31 22:39:48:141571] INFO  8356 --- [restartedMain] Http11NioProtocol:173 : Starting ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:39:48:141575] INFO  8356 --- [restartedMain] TomcatWebServer:220 : Tomcat started on port(s): 8989 (http) with context path ''
+[2023-10-31 22:39:48:141579] INFO  8356 --- [restartedMain] BackendCodingApplication:57 : Started BackendCodingApplication in 0.604 seconds (process running for 142.825)
+[2023-10-31 22:39:48:141581] INFO  8356 --- [restartedMain] ConditionEvaluationDeltaLoggingListener:63 : Condition evaluation unchanged
+[2023-10-31 22:39:48:1222] INFO  18580 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 22:39:48:1300] INFO  18580 --- [main] PointServiceImplTest:51 : Starting PointServiceImplTest using Java 20.0.1 with PID 18580 (started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:39:48:1301] INFO  18580 --- [main] PointServiceImplTest:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:39:49:2234] INFO  18580 --- [main] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:39:49:2274] INFO  18580 --- [main] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:39:49:2406] WARN  18580 --- [main] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:39:50:2794] INFO  18580 --- [main] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 22:39:50:3040] INFO  18580 --- [main] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:39:50:3041] INFO  18580 --- [main] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 22:39:50:3252] INFO  18580 --- [main] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:39:50:3336] INFO  18580 --- [main] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 22:39:51:3761] INFO  18580 --- [main] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:39:52:4990] INFO  18580 --- [main] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:39:52:5004] INFO  18580 --- [main] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:39:53:6038] INFO  18580 --- [main] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:39:53:6151] INFO  18580 --- [main] PointServiceImplTest:57 : Started PointServiceImplTest in 5.433 seconds (process running for 6.535)
+[2023-10-31 22:39:54:6903] INFO  18580 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:39:54:6905] INFO  18580 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 22:39:54:6910] INFO  18580 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 22:40:11:1221] INFO  17944 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 22:40:11:1256] INFO  17944 --- [main] PointServiceImplTest:51 : Starting PointServiceImplTest using Java 20.0.1 with PID 17944 (started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:40:11:1259] INFO  17944 --- [main] PointServiceImplTest:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:40:12:2211] INFO  17944 --- [main] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:40:12:2243] INFO  17944 --- [main] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:40:12:2361] WARN  17944 --- [main] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:40:13:2781] INFO  17944 --- [main] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 22:40:13:2988] INFO  17944 --- [main] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:40:13:2990] INFO  17944 --- [main] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 22:40:13:3232] INFO  17944 --- [main] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:40:13:3330] INFO  17944 --- [main] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 22:40:14:3830] INFO  17944 --- [main] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:40:15:4791] INFO  17944 --- [main] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:40:15:4802] INFO  17944 --- [main] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:40:16:5739] INFO  17944 --- [main] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:40:16:5818] INFO  17944 --- [main] PointServiceImplTest:57 : Started PointServiceImplTest in 5.191 seconds (process running for 6.174)
+[2023-10-31 22:40:16:6050] INFO  17944 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:40:16:6052] INFO  17944 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 22:40:16:6058] INFO  17944 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 22:40:48:201779] INFO  8356 --- [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-10-31 22:40:48:201801] INFO  8356 --- [Thread-16] Http11NioProtocol:173 : Pausing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:40:48:201802] INFO  8356 --- [Thread-16] StandardService:173 : Stopping service [Tomcat]
+[2023-10-31 22:40:48:201805] INFO  8356 --- [Thread-16] Http11NioProtocol:173 : Stopping ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:40:48:201807] INFO  8356 --- [Thread-16] Http11NioProtocol:173 : Destroying ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:40:48:201808] INFO  8356 --- [Thread-16] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:40:48:202011] WARN  8356 --- [Thread-16] DisposableBeanAdapter:210 : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2023-10-31 22:40:48:202012] INFO  8356 --- [Thread-16] HikariDataSource:350 : HikariPool-4 - Shutdown initiated...
+[2023-10-31 22:40:48:202013] INFO  8356 --- [Thread-16] HikariDataSource:352 : HikariPool-4 - Shutdown completed.
+[2023-10-31 22:40:48:202111] INFO  8356 --- [restartedMain] BackendCodingApplication:51 : Starting BackendCodingApplication using Java 20.0.1 with PID 8356 (C:\workSpace\nhnkcp-coding-test-JHB\target\classes started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:40:48:202112] INFO  8356 --- [restartedMain] BackendCodingApplication:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:40:49:202394] INFO  8356 --- [restartedMain] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:40:49:202402] INFO  8356 --- [restartedMain] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:40:49:202434] WARN  8356 --- [restartedMain] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:40:49:202488] INFO  8356 --- [restartedMain] TomcatWebServer:108 : Tomcat initialized with port(s): 8989 (http)
+[2023-10-31 22:40:49:202489] INFO  8356 --- [restartedMain] Http11NioProtocol:173 : Initializing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:40:49:202489] INFO  8356 --- [restartedMain] StandardService:173 : Starting service [Tomcat]
+[2023-10-31 22:40:49:202489] INFO  8356 --- [restartedMain] StandardEngine:173 : Starting Servlet engine: [Apache Tomcat/10.1.7]
+[2023-10-31 22:40:49:202521] INFO  8356 --- [restartedMain] [/]:173 : Initializing Spring embedded WebApplicationContext
+[2023-10-31 22:40:49:202521] INFO  8356 --- [restartedMain] ServletWebServerApplicationContext:291 : Root WebApplicationContext: initialization completed in 408 ms
+[2023-10-31 22:40:49:202534] INFO  8356 --- [restartedMain] HikariDataSource:110 : HikariPool-5 - Starting...
+[2023-10-31 22:40:49:202537] INFO  8356 --- [restartedMain] HikariPool:565 : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:40:49:202537] INFO  8356 --- [restartedMain] HikariDataSource:123 : HikariPool-5 - Start completed.
+[2023-10-31 22:40:49:202537] INFO  8356 --- [restartedMain] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:40:49:202580] INFO  8356 --- [restartedMain] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:40:49:202588] INFO  8356 --- [restartedMain] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:40:49:202663] INFO  8356 --- [restartedMain] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:40:49:202663] INFO  8356 --- [restartedMain] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:40:49:202805] INFO  8356 --- [restartedMain] OptionalLiveReloadServer:59 : LiveReload server is running on port 35729
+[2023-10-31 22:40:49:202813] INFO  8356 --- [restartedMain] Http11NioProtocol:173 : Starting ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:40:49:202816] INFO  8356 --- [restartedMain] TomcatWebServer:220 : Tomcat started on port(s): 8989 (http) with context path ''
+[2023-10-31 22:40:49:202822] INFO  8356 --- [restartedMain] BackendCodingApplication:57 : Started BackendCodingApplication in 0.744 seconds (process running for 204.067)
+[2023-10-31 22:40:49:202823] INFO  8356 --- [restartedMain] ConditionEvaluationDeltaLoggingListener:63 : Condition evaluation unchanged
+[2023-10-31 22:40:49:1335] INFO  4940 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 22:40:50:1383] INFO  4940 --- [main] PointServiceImplTest:51 : Starting PointServiceImplTest using Java 20.0.1 with PID 4940 (started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:40:50:1386] INFO  4940 --- [main] PointServiceImplTest:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:40:50:2061] INFO  4940 --- [main] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:40:50:2087] INFO  4940 --- [main] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:40:50:2173] WARN  4940 --- [main] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:40:51:2514] INFO  4940 --- [main] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 22:40:51:2742] INFO  4940 --- [main] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:40:51:2745] INFO  4940 --- [main] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 22:40:51:2965] INFO  4940 --- [main] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:40:51:3074] INFO  4940 --- [main] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 22:40:52:3475] INFO  4940 --- [main] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:40:52:4312] INFO  4940 --- [main] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:40:52:4324] INFO  4940 --- [main] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:40:53:5291] INFO  4940 --- [main] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:40:54:5373] INFO  4940 --- [main] PointServiceImplTest:57 : Started PointServiceImplTest in 4.564 seconds (process running for 5.699)
+[2023-10-31 22:40:54:5604] INFO  4940 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:40:54:5607] INFO  4940 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 22:40:54:5612] INFO  4940 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 22:40:58:212287] INFO  8356 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:40:59:212675] WARN  8356 --- [SpringApplicationShutdownHook] DisposableBeanAdapter:210 : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2023-10-31 22:40:59:212676] INFO  8356 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-5 - Shutdown initiated...
+[2023-10-31 22:40:59:212831] INFO  8356 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-5 - Shutdown completed.
+[2023-10-31 22:41:16:1336] INFO  9360 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 22:41:16:1376] INFO  9360 --- [main] PointServiceImplTest:51 : Starting PointServiceImplTest using Java 20.0.1 with PID 9360 (started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:41:16:1377] INFO  9360 --- [main] PointServiceImplTest:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:41:17:2220] INFO  9360 --- [main] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:41:17:2253] INFO  9360 --- [main] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:41:17:2358] WARN  9360 --- [main] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:41:17:2716] INFO  9360 --- [main] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 22:41:17:2985] INFO  9360 --- [main] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:41:17:2987] INFO  9360 --- [main] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 22:41:18:3183] INFO  9360 --- [main] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:41:18:3287] INFO  9360 --- [main] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 22:41:18:3689] INFO  9360 --- [main] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:41:19:4643] INFO  9360 --- [main] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:41:19:4655] INFO  9360 --- [main] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:41:20:5628] INFO  9360 --- [main] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:41:20:5704] INFO  9360 --- [main] PointServiceImplTest:57 : Started PointServiceImplTest in 4.961 seconds (process running for 6.37)
+[2023-10-31 22:41:21:6507] INFO  9360 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:41:21:6510] INFO  9360 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 22:41:21:6518] INFO  9360 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 22:43:33:670] INFO  17288 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 22:43:33:703] INFO  17288 --- [restartedMain] BackendCodingApplication:51 : Starting BackendCodingApplication using Java 20.0.1 with PID 17288 (C:\workSpace\nhnkcp-coding-test-JHB\target\classes started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:43:33:704] INFO  17288 --- [restartedMain] BackendCodingApplication:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:43:33:749] INFO  17288 --- [restartedMain] DevToolsPropertyDefaultsPostProcessor:250 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-10-31 22:43:33:749] INFO  17288 --- [restartedMain] DevToolsPropertyDefaultsPostProcessor:250 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-10-31 22:43:34:1359] INFO  17288 --- [restartedMain] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:43:34:1377] INFO  17288 --- [restartedMain] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:43:34:1504] WARN  17288 --- [restartedMain] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:43:35:2025] INFO  17288 --- [restartedMain] TomcatWebServer:108 : Tomcat initialized with port(s): 8989 (http)
+[2023-10-31 22:43:35:2034] INFO  17288 --- [restartedMain] Http11NioProtocol:173 : Initializing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:43:35:2035] INFO  17288 --- [restartedMain] StandardService:173 : Starting service [Tomcat]
+[2023-10-31 22:43:35:2036] INFO  17288 --- [restartedMain] StandardEngine:173 : Starting Servlet engine: [Apache Tomcat/10.1.7]
+[2023-10-31 22:43:35:2088] INFO  17288 --- [restartedMain] [/]:173 : Initializing Spring embedded WebApplicationContext
+[2023-10-31 22:43:35:2089] INFO  17288 --- [restartedMain] ServletWebServerApplicationContext:291 : Root WebApplicationContext: initialization completed in 1339 ms
+[2023-10-31 22:43:35:2113] INFO  17288 --- [restartedMain] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 22:43:35:2297] INFO  17288 --- [restartedMain] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:43:35:2299] INFO  17288 --- [restartedMain] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 22:43:35:2310] INFO  17288 --- [restartedMain] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:43:35:2535] INFO  17288 --- [restartedMain] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:43:35:2600] INFO  17288 --- [restartedMain] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 22:43:35:2885] INFO  17288 --- [restartedMain] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:43:36:3703] INFO  17288 --- [restartedMain] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:43:36:3712] INFO  17288 --- [restartedMain] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:43:37:4198] INFO  17288 --- [restartedMain] OptionalLiveReloadServer:59 : LiveReload server is running on port 35729
+[2023-10-31 22:43:37:4214] INFO  17288 --- [restartedMain] Http11NioProtocol:173 : Starting ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:43:37:4236] INFO  17288 --- [restartedMain] TomcatWebServer:220 : Tomcat started on port(s): 8989 (http) with context path ''
+[2023-10-31 22:43:37:4243] INFO  17288 --- [restartedMain] BackendCodingApplication:57 : Started BackendCodingApplication in 4.049 seconds (process running for 4.698)
+[2023-10-31 22:43:38:5370] INFO  17288 --- [http-nio-8989-exec-1] [/]:173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-10-31 22:43:38:5371] INFO  17288 --- [http-nio-8989-exec-1] DispatcherServlet:532 : Initializing Servlet 'dispatcherServlet'
+[2023-10-31 22:43:38:5372] INFO  17288 --- [http-nio-8989-exec-1] DispatcherServlet:554 : Completed initialization in 1 ms
+[2023-10-31 22:43:38:5464] INFO  17288 --- [http-nio-8989-exec-1] LogInterceptor:54 : Request : Remote IP: 0:0:0:0:0:0:0:1, Headers: {"host":"localhost:8989","connection":"keep-alive","postman-token":"a5b286e0-3e0c-4ca4-862d-94d058fbf81d","accept-encoding":"gzip, deflate, br","user-agent":"PostmanRuntime\/7.33.0","accept":"*\/*"}, Method: pointSearch, URI: /api/point/search, Parameter: {"pointType":"CODE_A"}
+[2023-10-31 22:43:54:21385] INFO  17288 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:43:54:21790] WARN  17288 --- [SpringApplicationShutdownHook] DisposableBeanAdapter:210 : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2023-10-31 22:43:54:21791] INFO  17288 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 22:43:55:21930] INFO  17288 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 22:43:57:673] INFO  20760 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 22:43:57:707] INFO  20760 --- [restartedMain] BackendCodingApplication:51 : Starting BackendCodingApplication using Java 20.0.1 with PID 20760 (C:\workSpace\nhnkcp-coding-test-JHB\target\classes started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:43:57:708] INFO  20760 --- [restartedMain] BackendCodingApplication:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:43:57:746] INFO  20760 --- [restartedMain] DevToolsPropertyDefaultsPostProcessor:250 : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2023-10-31 22:43:57:746] INFO  20760 --- [restartedMain] DevToolsPropertyDefaultsPostProcessor:250 : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2023-10-31 22:43:58:1397] INFO  20760 --- [restartedMain] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:43:58:1415] INFO  20760 --- [restartedMain] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:43:58:1505] WARN  20760 --- [restartedMain] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:43:58:2007] INFO  20760 --- [restartedMain] TomcatWebServer:108 : Tomcat initialized with port(s): 8989 (http)
+[2023-10-31 22:43:58:2017] INFO  20760 --- [restartedMain] Http11NioProtocol:173 : Initializing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:43:58:2018] INFO  20760 --- [restartedMain] StandardService:173 : Starting service [Tomcat]
+[2023-10-31 22:43:58:2019] INFO  20760 --- [restartedMain] StandardEngine:173 : Starting Servlet engine: [Apache Tomcat/10.1.7]
+[2023-10-31 22:43:58:2077] INFO  20760 --- [restartedMain] [/]:173 : Initializing Spring embedded WebApplicationContext
+[2023-10-31 22:43:58:2078] INFO  20760 --- [restartedMain] ServletWebServerApplicationContext:291 : Root WebApplicationContext: initialization completed in 1330 ms
+[2023-10-31 22:43:58:2104] INFO  20760 --- [restartedMain] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 22:43:58:2302] INFO  20760 --- [restartedMain] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:43:58:2304] INFO  20760 --- [restartedMain] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 22:43:58:2315] INFO  20760 --- [restartedMain] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:43:59:2517] INFO  20760 --- [restartedMain] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:43:59:2566] INFO  20760 --- [restartedMain] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 22:43:59:2867] INFO  20760 --- [restartedMain] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:44:00:3714] INFO  20760 --- [restartedMain] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:44:00:3730] INFO  20760 --- [restartedMain] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:44:00:4304] INFO  20760 --- [restartedMain] OptionalLiveReloadServer:59 : LiveReload server is running on port 35729
+[2023-10-31 22:44:00:4320] INFO  20760 --- [restartedMain] Http11NioProtocol:173 : Starting ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:44:00:4346] INFO  20760 --- [restartedMain] TomcatWebServer:220 : Tomcat started on port(s): 8989 (http) with context path ''
+[2023-10-31 22:44:00:4360] INFO  20760 --- [restartedMain] BackendCodingApplication:57 : Started BackendCodingApplication in 4.181 seconds (process running for 4.846)
+[2023-10-31 22:44:05:8537] INFO  20760 --- [http-nio-8989-exec-3] [/]:173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-10-31 22:44:05:8537] INFO  20760 --- [http-nio-8989-exec-3] DispatcherServlet:532 : Initializing Servlet 'dispatcherServlet'
+[2023-10-31 22:44:05:8539] INFO  20760 --- [http-nio-8989-exec-3] DispatcherServlet:554 : Completed initialization in 2 ms
+[2023-10-31 22:44:05:8605] INFO  20760 --- [http-nio-8989-exec-3] LogInterceptor:54 : Request : Remote IP: 0:0:0:0:0:0:0:1, Headers: {"host":"localhost:8989","connection":"keep-alive","postman-token":"6b0489eb-4be8-436a-b5dd-3ab5c1fabc0e","accept-encoding":"gzip, deflate, br","user-agent":"PostmanRuntime\/7.33.0","accept":"*\/*"}, Method: pointSearch, URI: /api/point/search, Parameter: {"pointType":"CODE_A"}
+[2023-10-31 22:44:19:23314] INFO  20760 --- [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+[2023-10-31 22:44:19:23336] INFO  20760 --- [Thread-6] Http11NioProtocol:173 : Pausing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:44:19:23336] INFO  20760 --- [Thread-6] StandardService:173 : Stopping service [Tomcat]
+[2023-10-31 22:44:19:23337] INFO  20760 --- [Thread-6] [/]:173 : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-10-31 22:44:19:23340] INFO  20760 --- [Thread-6] Http11NioProtocol:173 : Stopping ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:44:19:23341] INFO  20760 --- [Thread-6] Http11NioProtocol:173 : Destroying ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:44:19:23344] INFO  20760 --- [Thread-6] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:44:20:23564] WARN  20760 --- [Thread-6] DisposableBeanAdapter:210 : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2023-10-31 22:44:20:23565] INFO  20760 --- [Thread-6] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 22:44:20:23567] INFO  20760 --- [Thread-6] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 22:44:20:23645] INFO  20760 --- [restartedMain] BackendCodingApplication:51 : Starting BackendCodingApplication using Java 20.0.1 with PID 20760 (C:\workSpace\nhnkcp-coding-test-JHB\target\classes started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:44:20:23646] INFO  20760 --- [restartedMain] BackendCodingApplication:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:44:20:23841] INFO  20760 --- [restartedMain] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:44:20:23847] INFO  20760 --- [restartedMain] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:44:20:23871] WARN  20760 --- [restartedMain] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:44:20:23924] INFO  20760 --- [restartedMain] TomcatWebServer:108 : Tomcat initialized with port(s): 8989 (http)
+[2023-10-31 22:44:20:23925] INFO  20760 --- [restartedMain] Http11NioProtocol:173 : Initializing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:44:20:23925] INFO  20760 --- [restartedMain] StandardService:173 : Starting service [Tomcat]
+[2023-10-31 22:44:20:23925] INFO  20760 --- [restartedMain] StandardEngine:173 : Starting Servlet engine: [Apache Tomcat/10.1.7]
+[2023-10-31 22:44:20:23949] INFO  20760 --- [restartedMain] [/]:173 : Initializing Spring embedded WebApplicationContext
+[2023-10-31 22:44:20:23950] INFO  20760 --- [restartedMain] ServletWebServerApplicationContext:291 : Root WebApplicationContext: initialization completed in 302 ms
+[2023-10-31 22:44:20:23959] INFO  20760 --- [restartedMain] HikariDataSource:110 : HikariPool-2 - Starting...
+[2023-10-31 22:44:20:23960] INFO  20760 --- [restartedMain] HikariPool:565 : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:44:20:23960] INFO  20760 --- [restartedMain] HikariDataSource:123 : HikariPool-2 - Start completed.
+[2023-10-31 22:44:20:23960] INFO  20760 --- [restartedMain] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:44:20:23993] INFO  20760 --- [restartedMain] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:44:20:23997] INFO  20760 --- [restartedMain] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:44:20:24071] INFO  20760 --- [restartedMain] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:44:20:24072] INFO  20760 --- [restartedMain] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:44:20:24218] INFO  20760 --- [restartedMain] OptionalLiveReloadServer:59 : LiveReload server is running on port 35729
+[2023-10-31 22:44:20:24225] INFO  20760 --- [restartedMain] Http11NioProtocol:173 : Starting ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:44:20:24227] INFO  20760 --- [restartedMain] TomcatWebServer:220 : Tomcat started on port(s): 8989 (http) with context path ''
+[2023-10-31 22:44:20:24230] INFO  20760 --- [restartedMain] BackendCodingApplication:57 : Started BackendCodingApplication in 0.621 seconds (process running for 24.717)
+[2023-10-31 22:44:20:24233] INFO  20760 --- [restartedMain] ConditionEvaluationDeltaLoggingListener:63 : Condition evaluation unchanged
+[2023-10-31 22:44:23:26584] INFO  20760 --- [http-nio-8989-exec-2] [/]:173 : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2023-10-31 22:44:23:26585] INFO  20760 --- [http-nio-8989-exec-2] DispatcherServlet:532 : Initializing Servlet 'dispatcherServlet'
+[2023-10-31 22:44:23:26586] INFO  20760 --- [http-nio-8989-exec-2] DispatcherServlet:554 : Completed initialization in 1 ms
+[2023-10-31 22:44:23:26594] INFO  20760 --- [http-nio-8989-exec-2] LogInterceptor:54 : Request : Remote IP: 0:0:0:0:0:0:0:1, Headers: {"host":"localhost:8989","connection":"keep-alive","postman-token":"132a1e2c-ad13-41f0-be69-a362967313c7","accept-encoding":"gzip, deflate, br","user-agent":"PostmanRuntime\/7.33.0","accept":"*\/*"}, Method: pointSearch, URI: /api/point/search, Parameter: {"pointType":"CODE_A"}
+[2023-10-31 22:49:33:336701] INFO  20760 --- [File Watcher] LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211 : Restarting due to 12 class path changes (0 additions, 12 deletions, 0 modifications)
+[2023-10-31 22:49:33:336733] INFO  20760 --- [Thread-8] Http11NioProtocol:173 : Pausing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:49:33:336734] INFO  20760 --- [Thread-8] StandardService:173 : Stopping service [Tomcat]
+[2023-10-31 22:49:33:336734] INFO  20760 --- [Thread-8] [/]:173 : Destroying Spring FrameworkServlet 'dispatcherServlet'
+[2023-10-31 22:49:33:336738] INFO  20760 --- [Thread-8] Http11NioProtocol:173 : Stopping ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:49:33:336739] INFO  20760 --- [Thread-8] Http11NioProtocol:173 : Destroying ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:49:33:336741] INFO  20760 --- [Thread-8] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:49:33:336947] WARN  20760 --- [Thread-8] DisposableBeanAdapter:210 : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2023-10-31 22:49:33:336948] INFO  20760 --- [Thread-8] HikariDataSource:350 : HikariPool-2 - Shutdown initiated...
+[2023-10-31 22:49:33:336949] INFO  20760 --- [Thread-8] HikariDataSource:352 : HikariPool-2 - Shutdown completed.
+[2023-10-31 22:49:33:337030] INFO  20760 --- [restartedMain] BackendCodingApplication:51 : Starting BackendCodingApplication using Java 20.0.1 with PID 20760 (C:\workSpace\nhnkcp-coding-test-JHB\target\classes started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:49:33:337030] INFO  20760 --- [restartedMain] BackendCodingApplication:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:49:33:337233] INFO  20760 --- [restartedMain] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:49:33:337239] INFO  20760 --- [restartedMain] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:49:33:337276] WARN  20760 --- [restartedMain] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:49:33:337321] INFO  20760 --- [restartedMain] TomcatWebServer:108 : Tomcat initialized with port(s): 8989 (http)
+[2023-10-31 22:49:33:337322] INFO  20760 --- [restartedMain] Http11NioProtocol:173 : Initializing ProtocolHandler ["http-nio-8989"]
+[2023-10-31 22:49:33:337322] INFO  20760 --- [restartedMain] StandardService:173 : Starting service [Tomcat]
+[2023-10-31 22:49:33:337322] INFO  20760 --- [restartedMain] StandardEngine:173 : Starting Servlet engine: [Apache Tomcat/10.1.7]
+[2023-10-31 22:49:33:337339] INFO  20760 --- [restartedMain] [/]:173 : Initializing Spring embedded WebApplicationContext
+[2023-10-31 22:49:33:337339] INFO  20760 --- [restartedMain] ServletWebServerApplicationContext:291 : Root WebApplicationContext: initialization completed in 306 ms
+[2023-10-31 22:49:33:337348] INFO  20760 --- [restartedMain] HikariDataSource:110 : HikariPool-3 - Starting...
+[2023-10-31 22:49:33:337350] INFO  20760 --- [restartedMain] HikariPool:565 : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:49:33:337350] INFO  20760 --- [restartedMain] HikariDataSource:123 : HikariPool-3 - Start completed.
+[2023-10-31 22:49:33:337351] INFO  20760 --- [restartedMain] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:49:34:337393] INFO  20760 --- [restartedMain] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:49:34:337400] INFO  20760 --- [restartedMain] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:49:34:337475] INFO  20760 --- [restartedMain] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:49:34:337475] INFO  20760 --- [restartedMain] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:49:34:337485] WARN  20760 --- [restartedMain] AnnotationConfigServletWebServerApplicationContext:592 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController': Lookup method resolution failed
+[2023-10-31 22:49:34:337486] INFO  20760 --- [restartedMain] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:49:34:337696] WARN  20760 --- [restartedMain] DisposableBeanAdapter:210 : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2023-10-31 22:49:34:337697] INFO  20760 --- [restartedMain] HikariDataSource:350 : HikariPool-3 - Shutdown initiated...
+[2023-10-31 22:49:34:337837] INFO  20760 --- [restartedMain] HikariDataSource:352 : HikariPool-3 - Shutdown completed.
+[2023-10-31 22:49:34:337837] INFO  20760 --- [restartedMain] StandardService:173 : Stopping service [Tomcat]
+[2023-10-31 22:49:34:337844] INFO  20760 --- [restartedMain] ConditionEvaluationReportLogger:82 : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2023-10-31 22:49:34:337878] ERROR 20760 --- [restartedMain] SpringApplication:822 : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:471)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1291)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:310)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at kr.co.kcp.backendcoding.BackendCodingApplication.main(BackendCodingApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [kr.co.kcp.backendcoding.work.controller.OrderController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@78a3b48a]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:449)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: kr/co/kcp/backendcoding/work/domain/dto/request/OrderReservationRequestDto
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3502)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2601)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: kr.co.kcp.backendcoding.work.domain.dto.request.OrderReservationRequestDto
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:496)
+	at java.base/java.lang.Class.forName(Class.java:475)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	... 28 common frames omitted
+[2023-10-31 22:49:36:339421] INFO  20760 --- [restartedMain] BackendCodingApplication:51 : Starting BackendCodingApplication using Java 20.0.1 with PID 20760 (C:\workSpace\nhnkcp-coding-test-JHB\target\classes started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:49:36:339422] INFO  20760 --- [restartedMain] BackendCodingApplication:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:49:36:339585] INFO  20760 --- [restartedMain] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:49:36:339590] INFO  20760 --- [restartedMain] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:49:36:339617] WARN  20760 --- [restartedMain] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:49:36:339657] INFO  20760 --- [restartedMain] TomcatWebServer:108 : Tomcat initialized with port(s): 8989 (http)
+[2023-10-31 22:49:36:339676] INFO  20760 --- [restartedMain] ServletWebServerApplicationContext:291 : Root WebApplicationContext: initialization completed in 252 ms
+[2023-10-31 22:49:36:339684] INFO  20760 --- [restartedMain] HikariDataSource:110 : HikariPool-4 - Starting...
+[2023-10-31 22:49:36:339686] INFO  20760 --- [restartedMain] HikariPool:565 : HikariPool-4 - Added connection conn23: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:49:36:339686] INFO  20760 --- [restartedMain] HikariDataSource:123 : HikariPool-4 - Start completed.
+[2023-10-31 22:49:36:339687] INFO  20760 --- [restartedMain] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:49:36:339726] INFO  20760 --- [restartedMain] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:49:36:339733] INFO  20760 --- [restartedMain] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:49:36:339802] INFO  20760 --- [restartedMain] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:49:36:339802] INFO  20760 --- [restartedMain] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:49:36:339847] WARN  20760 --- [restartedMain] AnnotationConfigServletWebServerApplicationContext:592 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pointController' defined in file [C:\workSpace\nhnkcp-coding-test-JHB\target\classes\kr\co\kcp\backendcoding\work\controller\PointController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'kr.co.kcp.backendcoding.work.service.PointService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[2023-10-31 22:49:36:339847] INFO  20760 --- [restartedMain] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:49:36:340049] WARN  20760 --- [restartedMain] DisposableBeanAdapter:210 : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2023-10-31 22:49:36:340049] INFO  20760 --- [restartedMain] HikariDataSource:350 : HikariPool-4 - Shutdown initiated...
+[2023-10-31 22:49:36:340162] INFO  20760 --- [restartedMain] HikariDataSource:352 : HikariPool-4 - Shutdown completed.
+[2023-10-31 22:53:13:1116] INFO  25764 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 22:53:13:1150] INFO  25764 --- [main] OrderServiceImplTest:51 : Starting OrderServiceImplTest using Java 20.0.1 with PID 25764 (started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:53:13:1152] INFO  25764 --- [main] OrderServiceImplTest:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:53:14:1926] INFO  25764 --- [main] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:53:14:1960] INFO  25764 --- [main] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:53:14:2060] WARN  25764 --- [main] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:53:14:2410] INFO  25764 --- [main] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 22:53:15:2629] INFO  25764 --- [main] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:53:15:2632] INFO  25764 --- [main] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 22:53:15:2864] INFO  25764 --- [main] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:53:15:2939] INFO  25764 --- [main] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 22:53:15:3373] INFO  25764 --- [main] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:53:16:4308] INFO  25764 --- [main] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:53:16:4325] INFO  25764 --- [main] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:53:17:5272] INFO  25764 --- [main] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:53:17:5352] INFO  25764 --- [main] OrderServiceImplTest:57 : Started OrderServiceImplTest in 4.724 seconds (process running for 5.692)
+[2023-10-31 22:53:18:6225] INFO  25764 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:53:18:6227] INFO  25764 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 22:53:18:6230] INFO  25764 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 22:53:22:1126] INFO  8172 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 22:53:22:1165] INFO  8172 --- [main] OrderServiceImplTest:51 : Starting OrderServiceImplTest using Java 20.0.1 with PID 8172 (started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 22:53:22:1166] INFO  8172 --- [main] OrderServiceImplTest:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 22:53:23:1921] INFO  8172 --- [main] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 22:53:23:1953] INFO  8172 --- [main] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+[2023-10-31 22:53:23:2053] WARN  8172 --- [main] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 22:53:24:2391] INFO  8172 --- [main] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 22:53:24:2600] INFO  8172 --- [main] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 22:53:24:2602] INFO  8172 --- [main] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 22:53:24:2824] INFO  8172 --- [main] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 22:53:24:2899] INFO  8172 --- [main] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 22:53:24:3260] INFO  8172 --- [main] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 22:53:25:4129] INFO  8172 --- [main] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 22:53:25:4140] INFO  8172 --- [main] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:53:26:5106] INFO  8172 --- [main] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 22:53:26:5179] INFO  8172 --- [main] OrderServiceImplTest:57 : Started OrderServiceImplTest in 4.571 seconds (process running for 5.513)
+[2023-10-31 22:53:27:5964] INFO  8172 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 22:53:27:5967] INFO  8172 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 22:53:27:5971] INFO  8172 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 23:17:44:1118] INFO  12412 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 23:17:44:1165] INFO  12412 --- [main] OrderServiceImplTest:51 : Starting OrderServiceImplTest using Java 20.0.1 with PID 12412 (started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 23:17:44:1166] INFO  12412 --- [main] OrderServiceImplTest:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 23:17:44:1911] INFO  12412 --- [main] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 23:17:44:1948] INFO  12412 --- [main] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+[2023-10-31 23:17:45:2051] WARN  12412 --- [main] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 23:17:45:2386] INFO  12412 --- [main] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 23:17:45:2611] INFO  12412 --- [main] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 23:17:45:2613] INFO  12412 --- [main] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 23:17:45:2844] INFO  12412 --- [main] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 23:17:45:2937] INFO  12412 --- [main] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 23:17:46:3329] INFO  12412 --- [main] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 23:17:47:4269] INFO  12412 --- [main] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 23:17:47:4281] INFO  12412 --- [main] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 23:17:48:5338] INFO  12412 --- [main] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 23:17:48:5431] INFO  12412 --- [main] OrderServiceImplTest:57 : Started OrderServiceImplTest in 4.81 seconds (process running for 5.744)
+[2023-10-31 23:17:49:6335] INFO  12412 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 23:17:49:6338] INFO  12412 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 23:17:49:6340] INFO  12412 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 23:17:54:1087] INFO  25040 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 23:17:54:1131] INFO  25040 --- [main] OrderServiceImplTest:51 : Starting OrderServiceImplTest using Java 20.0.1 with PID 25040 (started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 23:17:54:1134] INFO  25040 --- [main] OrderServiceImplTest:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 23:17:55:1928] INFO  25040 --- [main] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 23:17:55:1960] INFO  25040 --- [main] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[2023-10-31 23:17:55:2063] WARN  25040 --- [main] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 23:17:56:2413] INFO  25040 --- [main] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 23:17:56:2634] INFO  25040 --- [main] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 23:17:56:2637] INFO  25040 --- [main] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 23:17:56:2882] INFO  25040 --- [main] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 23:17:56:2957] INFO  25040 --- [main] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 23:17:57:3383] INFO  25040 --- [main] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 23:17:57:4221] INFO  25040 --- [main] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 23:17:57:4232] INFO  25040 --- [main] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 23:17:58:5310] INFO  25040 --- [main] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 23:17:59:5399] INFO  25040 --- [main] OrderServiceImplTest:57 : Started OrderServiceImplTest in 4.791 seconds (process running for 5.733)
+[2023-10-31 23:17:59:6174] INFO  25040 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 23:17:59:6176] INFO  25040 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 23:17:59:6182] INFO  25040 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 23:18:05:1036] INFO  12908 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 23:18:06:1067] INFO  12908 --- [main] PointServiceImplTest:51 : Starting PointServiceImplTest using Java 20.0.1 with PID 12908 (started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 23:18:06:1069] INFO  12908 --- [main] PointServiceImplTest:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 23:18:06:1807] INFO  12908 --- [main] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 23:18:06:1844] INFO  12908 --- [main] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+[2023-10-31 23:18:06:1955] WARN  12908 --- [main] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 23:18:07:2312] INFO  12908 --- [main] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 23:18:07:2548] INFO  12908 --- [main] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 23:18:07:2550] INFO  12908 --- [main] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 23:18:07:2797] INFO  12908 --- [main] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 23:18:07:2900] INFO  12908 --- [main] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 23:18:08:3334] INFO  12908 --- [main] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 23:18:09:4225] INFO  12908 --- [main] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 23:18:09:4242] INFO  12908 --- [main] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 23:18:10:5277] INFO  12908 --- [main] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 23:18:10:5367] INFO  12908 --- [main] PointServiceImplTest:57 : Started PointServiceImplTest in 4.762 seconds (process running for 5.733)
+[2023-10-31 23:18:11:6113] INFO  12908 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 23:18:11:6119] INFO  12908 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 23:18:11:6126] INFO  12908 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 23:28:22:1094] INFO  1668 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 23:28:22:1127] INFO  1668 --- [main] OrderServiceImplTest:51 : Starting OrderServiceImplTest using Java 20.0.1 with PID 1668 (started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 23:28:22:1129] INFO  1668 --- [main] OrderServiceImplTest:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 23:28:23:1943] INFO  1668 --- [main] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 23:28:23:1986] INFO  1668 --- [main] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+[2023-10-31 23:28:23:2119] WARN  1668 --- [main] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 23:28:23:2470] INFO  1668 --- [main] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 23:28:23:2723] INFO  1668 --- [main] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 23:28:23:2725] INFO  1668 --- [main] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 23:28:24:2953] INFO  1668 --- [main] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 23:28:24:3050] INFO  1668 --- [main] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 23:28:24:3445] INFO  1668 --- [main] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 23:28:25:4326] INFO  1668 --- [main] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 23:28:25:4339] INFO  1668 --- [main] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 23:28:26:5181] INFO  1668 --- [main] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 23:28:26:5262] INFO  1668 --- [main] OrderServiceImplTest:57 : Started OrderServiceImplTest in 4.647 seconds (process running for 5.592)
+[2023-10-31 23:28:27:6065] INFO  1668 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 23:28:27:6066] INFO  1668 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 23:28:27:6070] INFO  1668 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.
+[2023-10-31 23:28:36:1192] INFO  9768 --- [background-preinit] Version:21 : HV000001: Hibernate Validator 8.0.0.Final
+[2023-10-31 23:28:36:1231] INFO  9768 --- [main] OrderServiceImplTest:51 : Starting OrderServiceImplTest using Java 20.0.1 with PID 9768 (started by alfha in C:\workSpace\nhnkcp-coding-test-JHB)
+[2023-10-31 23:28:36:1232] INFO  9768 --- [main] OrderServiceImplTest:632 : No active profile set, falling back to 1 default profile: "default"
+[2023-10-31 23:28:37:2009] INFO  9768 --- [main] RepositoryConfigurationDelegate:138 : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2023-10-31 23:28:37:2044] INFO  9768 --- [main] RepositoryConfigurationDelegate:208 : Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+[2023-10-31 23:28:37:2150] WARN  9768 --- [main] ClassPathMapperScanner:44 : No MyBatis mapper was found in '[kr.co.kcp.backendcoding]' package. Please check your configuration.
+[2023-10-31 23:28:37:2477] INFO  9768 --- [main] HikariDataSource:110 : HikariPool-1 - Starting...
+[2023-10-31 23:28:37:2708] INFO  9768 --- [main] HikariPool:565 : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+[2023-10-31 23:28:37:2710] INFO  9768 --- [main] HikariDataSource:123 : HikariPool-1 - Start completed.
+[2023-10-31 23:28:37:2937] INFO  9768 --- [main] LogHelper:31 : HHH000204: Processing PersistenceUnitInfo [name: default]
+[2023-10-31 23:28:38:3032] INFO  9768 --- [main] Version:44 : HHH000412: Hibernate ORM core version 6.1.7.Final
+[2023-10-31 23:28:38:3395] INFO  9768 --- [main] SQL dialect:66 : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2023-10-31 23:28:39:4248] INFO  9768 --- [main] JtaPlatformInitiator:51 : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2023-10-31 23:28:39:4265] INFO  9768 --- [main] LocalContainerEntityManagerFactoryBean:437 : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 23:28:40:5179] INFO  9768 --- [main] H2ConsoleAutoConfiguration:88 : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+[2023-10-31 23:28:40:5267] INFO  9768 --- [main] OrderServiceImplTest:57 : Started OrderServiceImplTest in 4.618 seconds (process running for 5.59)
+[2023-10-31 23:28:41:6034] INFO  9768 --- [SpringApplicationShutdownHook] LocalContainerEntityManagerFactoryBean:650 : Closing JPA EntityManagerFactory for persistence unit 'default'
+[2023-10-31 23:28:41:6037] INFO  9768 --- [SpringApplicationShutdownHook] HikariDataSource:350 : HikariPool-1 - Shutdown initiated...
+[2023-10-31 23:28:41:6041] INFO  9768 --- [SpringApplicationShutdownHook] HikariDataSource:352 : HikariPool-1 - Shutdown completed.

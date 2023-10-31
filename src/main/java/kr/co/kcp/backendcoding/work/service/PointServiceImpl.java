@@ -6,7 +6,6 @@ import kr.co.kcp.backendcoding.work.domain.dto.response.CommonResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.ResourceAccessException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -27,44 +26,28 @@ public class PointServiceImpl implements PointService{
         // 재시도 횟수
         int retryCount = 0;
         // 요청 타입 추출
-        String type = extractionType(pointSearchRequestDto.getPointType());
+        String type = extractionType(pointSearchRequestDto.pointType());
 
         // 요청 파라미터 추가
         UriComponentsBuilder uriBuilder = UriComponentsBuilder.fromUriString(uri)
                 .queryParam("type", type);
 
-        // 재시도 횟수가 3이상이 될떄까지 반복
-        while(retryCount < maxCount) {
-            try {
+        try{
+            ApiResponseDto result = restTemplate.getForObject(uriBuilder.toUriString(), ApiResponseDto.class);
+            // 성공시 공통응답 return
+            return CommonResponseDto.builder()
+                    .code(result.getStatus())
+                    .message(result.getMessage())
+                    .data(result.getResult())
+                    .build();
 
-                ApiResponseDto result = restTemplate.getForObject(uriBuilder.toUriString(), ApiResponseDto.class);
-                // 성공시 공통응답 return
-                return CommonResponseDto.builder()
-                        .code(result.getStatus())
-                        .message(result.getMessage())
-                        .data(result.getResult())
-                        .build();
-
-            } catch (ResourceAccessException e) {
-                retryCount++;
-                if(retryCount < maxCount) {
-                    // 재시도
-                    ApiResponseDto result = restTemplate.getForObject(uriBuilder.toUriString(), ApiResponseDto.class);
-                } else {
-                    // 재시도 횟수 초과
-                    return CommonResponseDto.builder()
-                            .code(1)
-                            .message("API 호출 실패 : 호출 횟수 초과 입니다.")
-                            .build();
-                }
-            }
+        } catch (Exception e) {
+            // 위의 try에서 return 되지 않았다면 실패 응답 리턴
+            return CommonResponseDto.builder()
+                    .code(1)
+                    .message("API 호출 실패 하였습니다.")
+                    .build();
         }
-        
-        // 위의 try에서 return 되지 않았다면 실패 응답 리턴
-        return CommonResponseDto.builder()
-                .code(1)
-                .message("API 호출 실패 하였습니다.")
-                .build();
     }
 
     // 요청 타입 추출 함수

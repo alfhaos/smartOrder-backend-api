@@ -30,7 +30,7 @@ public class OrderRepository {
 
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
-        String orderId = orderInfoRequest.getOrderId();
+        String orderId = orderInfoRequest.orderId();
         Orders orders;
         /*
         * 주문 금액, 주믄 날짜 조회
@@ -126,8 +126,6 @@ public class OrderRepository {
     * */
     public CommonResponseDto sendNotification(String reservationId) {
 
-        CommonResponseDto commonResponseDto = new CommonResponseDto();
-
         try{
             OrderReservations orderReservations = em.createQuery("select ov " +
                             "from OrderReservations ov " +
@@ -135,23 +133,23 @@ public class OrderRepository {
                     .setParameter("reservationId", reservationId)
                     .getSingleResult();
 
-            // 공통응답 데이터 생성
-            commonResponseDto.setCode(0);
-            commonResponseDto.setMessage("주문 예약 정보 저장 성공했습니다.");
-
             // 응답 DTO 생성
             OrderReservationResponseDto orderReservationResponseDto = new OrderReservationResponseDto(orderReservations.getReservationId());
 
-            commonResponseDto.setData(orderReservationResponseDto);
+            return CommonResponseDto.builder()
+                    .code(0)
+                    .message("주문 예약 정보 저장 성공했습니다.")
+                    .data(orderReservationResponseDto)
+                    .build();
 
-            return commonResponseDto;
         } catch (NoResultException exception){
             
             // 조회된 결과가 없을때
-            commonResponseDto.setCode(1);
-            commonResponseDto.setMessage("조회된 주문 예약 정보가 없습니다.");
 
-            return commonResponseDto;
+            return CommonResponseDto.builder()
+                    .code(1)
+                    .message("조회된 주문 예약 정보가 없습니다.")
+                    .build();
         }
 
     }

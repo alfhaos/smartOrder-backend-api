@@ -5,6 +5,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import kr.co.kcp.backendcoding.work.common.model.RequestEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONObject;
+import org.springframework.http.MediaType;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -18,9 +19,6 @@ import java.util.Map;
 // request에 따른 로그를 기록 하기 위한 Interceptor
 @Slf4j
 public class LogInterceptor implements HandlerInterceptor {
-
-    private static final String appJson = "application/json";
-
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
@@ -45,7 +43,7 @@ public class LogInterceptor implements HandlerInterceptor {
             parameterMap = namesConvert(request.getParameterNames(), request,RequestEnum.PARAMETER.name());
             parameterJson= new JSONObject(parameterMap).toJSONString();
 
-        } else if(headersMap.get("content-type").equals(appJson)){
+        } else if(headersMap.get("content-type").equals(MediaType.APPLICATION_JSON_VALUE)){
             // application/json 요청의 경우, 요청 바디를 읽어올 수 있습니다.
             parameterJson = getRequestBody(request);
         }

@@ -3,7 +3,6 @@ package kr.co.kcp.backendcoding.work.domain.payment;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@Data
 @AllArgsConstructor
 public class Cash implements PaymentType{
 

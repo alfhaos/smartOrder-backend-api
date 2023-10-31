@@ -22,8 +22,7 @@ public class BeanValidationTest {
     public void beanValidationTwo() {
 
         // given : 요청 파라미터 Dto 객체 생성
-        OrderInfoRequestDto orderInfoRequest = OrderInfoRequestDto.builder()
-                .orderId("aasdd").build();
+        OrderInfoRequestDto orderInfoRequest = new OrderInfoRequestDto("aassdd");
 
         // when : 유효성 검사
         Set<ConstraintViolation<OrderInfoRequestDto>> violations = validator.validate(orderInfoRequest);
@@ -58,9 +57,7 @@ public class BeanValidationTest {
     public void beanValidationFour() {
 
         // given : 요청 파라미터 Dto 객체 생성
-        PointSearchRequestDto pointSearchRequestDto = PointSearchRequestDto.builder()
-                .pointType("CODE_A")
-                .build();
+        PointSearchRequestDto pointSearchRequestDto = new PointSearchRequestDto("CODE_A");
 
         // when : 유효성 검사
         Set<ConstraintViolation<PointSearchRequestDto>> violations = validator.validate(pointSearchRequestDto);

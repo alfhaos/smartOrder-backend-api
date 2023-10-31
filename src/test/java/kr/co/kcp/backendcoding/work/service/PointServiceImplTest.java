@@ -23,9 +23,7 @@ public class PointServiceImplTest {
     public void pointTest() {
 
         // given : 요청 파라미터 생성
-        PointSearchRequestDto pointSearchRequestDto = PointSearchRequestDto.builder()
-                .pointType("CODE_A")
-                .build();
+        PointSearchRequestDto pointSearchRequestDto = new PointSearchRequestDto("CODE_A");
 
         // when : 조회 결과
         CommonResponseDto commonResponseDto = pointService.pointSearch(pointSearchRequestDto);
